@@ -1,23 +1,23 @@
 ```
-# Simple Binary Classifier with PyTorch
+# 🧠 Simple Binary Classifier with PyTorch
 
-This project demonstrates a basic binary classification model built using **PyTorch**. It trains a small feedforward neural network on a synthetic dataset generated using `sklearn.datasets.make_classification`.
+This project demonstrates a basic **binary classification** model using **PyTorch**. It uses a synthetic dataset generated with `sklearn.datasets.make_classification`.
 
-## 🧠 Model Architecture
+## 📌 Model Summary
 
-- Input Layer: 10 features  
-- Hidden Layer: 32 neurons with ReLU activation  
-- Output Layer: 1 neuron with Sigmoid activation  
-- Loss Function: Binary Cross Entropy Loss (BCELoss)  
-- Optimizer: Adam
+- **Input Layer**: 10 features  
+- **Hidden Layer**: 32 neurons with ReLU  
+- **Output Layer**: 1 neuron with Sigmoid  
+- **Loss Function**: Binary Cross-Entropy Loss (`BCELoss`)  
+- **Optimizer**: Adam
 
-## 🛠 Features
+## ⚙️ Features
 
-- Data preprocessing using `StandardScaler`
-- Train/test split
-- Training loop with loss reporting
-- Evaluation with accuracy on test data
-- Optional GPU support
+- Preprocessing with `StandardScaler`
+- Train/test splitting
+- Custom training loop with loss tracking
+- Accuracy evaluation
+- Compatible with **CPU** and **GPU**
 
 ## 📦 Requirements
 
@@ -25,20 +25,26 @@ This project demonstrates a basic binary classification model built using **PyTo
 - PyTorch
 - scikit-learn
 
-You can install the dependencies in a virtual environment with:
+### 💾 Installation
+
+Set up a virtual environment (optional but recommended):
 
 ```bash
+python -m venv venv
+venv\Scripts\activate     # On Windows
+# source venv/bin/activate  # On macOS/Linux
+
 pip install torch torchvision torchaudio
 pip install scikit-learn
 ```
 
-## 🚀 Running the Model
+## 🚀 How to Run
 
 ```bash
 python simple_neural_net.py
 ```
 
-You’ll see output like:
+### ✅ Example Output
 
 ```
 Epoch 5/20, Loss: 0.5834  
@@ -51,14 +57,13 @@ Test Accuracy: 0.8550
 ## 📁 Project Structure
 
 ```
-simple-nn/
-├── simple_neural_net.py        # Training script
-├── README.md      # Project readme      # Optional virtual environment
+simple-binary-classifier/
+├── simple_neural_net.py        # Main training script
+├── README.md      # This file         # Optional virtual environment
 ```
 
 ## 💡 Notes
 
-- The model can be trained on GPU by using `model.to(device)` and moving the data to the same device.
-- You can experiment with model depth, hidden neurons, or optimizer settings for better performance.
+- Move your model and data to GPU using `.to("cuda")` if available.
+- You can tweak the model size, optimizer, and training loop to explore improvements.
 ```
-
