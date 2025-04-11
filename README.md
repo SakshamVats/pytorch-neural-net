@@ -1,4 +1,4 @@
-```
+
 # 🧠 Simple Binary Classifier with PyTorch
 
 This project demonstrates a basic **binary classification** model using **PyTorch**. It uses a synthetic dataset generated with `sklearn.datasets.make_classification`.
@@ -66,4 +66,4 @@ simple-binary-classifier/
 
 - Move your model and data to GPU using `.to("cuda")` if available.
 - You can tweak the model size, optimizer, and training loop to explore improvements.
-```
+
